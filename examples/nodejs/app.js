@@ -4,8 +4,7 @@
  *
  * Quickstart:
  * 1. Download and extract a core agent binary. URL for OSX: http://s3-us-west-1.amazonaws.com/scout-public-downloads/apm_core_agent/release/scout_apm_core-latest-x86_64-apple-darwin.tgz
- * 2. Start the core agent:
- *    ~/Downloads/scout_apm_core-latest-x86_64-apple-darwin/core-agent start --socket /tmp/core-agent.sock
+ * 2. Start the core agent: `~/Downloads/scout_apm_core-latest-x86_64-apple-darwin/core-agent start --socket /tmp/core-agent.sock`
  * 3. Install dependencies: `npm install uuid bufferpack`
  * 4. Run the app, passing a name for your app and Scout agent key as env vars: `SCOUT_NAME="YOUR APP" SCOUT_KEY="YOUR KEY" node app.js`
  */
