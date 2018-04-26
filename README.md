@@ -10,4 +10,4 @@ This repository contains documentation and examples for the Core Agent API. Note
 
 ## Quick Start
 
-See the NodeJS example.
+See the [NodeJS example](https://github.com/scoutapp/core-agent-api/blob/master/examples/nodejs/app.js).
