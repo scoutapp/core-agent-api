@@ -1,7 +1,13 @@
-# Scout Core Agent Examples
+__🚧 The Core Agent API is in Tech Preview and under active development. Please watch this repo to stay informed of potentially breaking changes. If you have questions, email support@scoutapp.com.__
 
-Using Scout, but have an app in a language Scout doesn't support? You're in luck!
+# Scout Core Agent API
 
-Starting with Scout's Python Monitoring agent, much of the logic has moved to a core agent that acts as a backend to instrumentation. This core agent is implemented as a standalone binary. If you can send messages over a Unix Domain Socket (and you can in every common language), you can add instrumentation to your app!
+Using Scout, but have an app in a language we don't yet support? You're in luck!
 
-This repository contains example implementations and documentation for the Core Agent API. 
+If you can send messages over a Unix Domain Socket (hint: you can in every common language), you can add tracing and instrumentation to your app.
+
+This repository contains documentation and examples for the Core Agent API. Note that the Core Agent itself is closed source.
+
+## Quick Start
+
+See the NodeJS example.
