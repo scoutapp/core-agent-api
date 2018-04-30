@@ -130,6 +130,7 @@ func (ca *CoreAgent) Open() error {
 func (ca *CoreAgent) Close() error {
 	if ca.Connected {
 		ca.Socket.Close()
+		ca.Connected = false
 	}
 	return nil
 }
