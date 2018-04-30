@@ -59,12 +59,3 @@ function sendToSocket(object) {
   socket.write(bufferpack.pack('L',[size]));
   socket.write(message);
 }
-
-// Encodes a number as a 4 byte big-endian
-function toBytesInt32(num) {
-  var ascii='';
-  for (let i=3;i>=0;i--) {
-      ascii+=String.fromCharCode((num>>(8*i))&255);
-  }
-  return ascii;
-};
