@@ -128,6 +128,9 @@ func (ca *CoreAgent) Open() error {
 }
 
 func (ca *CoreAgent) Close() error {
+	ca.Lock()
+	defer ca.Unlock()
+
 	if ca.Connected {
 		ca.Socket.Close()
 		ca.Connected = false
