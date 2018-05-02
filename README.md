@@ -12,9 +12,12 @@ This repository contains documentation and examples for the Core Agent API. Note
 
 ## How the Core Agent works
 
-About 80% of the logic required for an Application Performance Agent (APM) lies in language-agnostic code. The remaining 20% is the language instrumentation. Starting with Scout's Python monitoring agent, the language instrumentation communicates with the core agent, sending information like the start and stop of requests to the Core Agent. The core agent handles the aggregation of performance metrics and reporting data to Scout's servers.
+![diagram](https://s3-us-west-1.amazonaws.com/scout-blog/core-agent-diagram.png)
 
-The core agent is designed to run on the same host as the instrumented app.
+* Run the core agent binary on the same host(s) as the monitored app
+* Send tracing information (spans) to the core agent via a Unix Domain Socket
+* The core agent sends traces and aggregrate performance data to Scoutapp.com.
+* View your metrics within the Scout UI
 
 ## Quick Start
 
