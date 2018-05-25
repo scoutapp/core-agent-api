@@ -34,7 +34,7 @@ const server = http.createServer((req, res) => {
 
   // Create the span ... traces are composed of spans.
   var span_id = uuidv1();
-  // For now, at least of the spans in a transaction must start with 'Controller'
+  // For now, at least one of the spans in a transaction must start with 'Controller'
   sendToSocket({StartSpan: {request_id: request_id, span_id: span_id, operation: 'Controller/users/edit' }});
 
   // The actual work to instrument
